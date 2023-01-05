@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Lobster&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 10px;
+    
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 1.5rem;
+}
+
+#card {
+    background-color: hsl(244, 38%, 16%);
+    width: 80%;
+    margin: 10% auto;
+}
+
+/* Image */
+#card-img {
+    background-color: hsl(277, 64%, 61%);
+}
+
+#card-img img {    
+    mix-blend-mode: multiply;
+    width: 100%;
+    display: block;
+    opacity: 0.8;
+}
+
+#card-img img#desktop-img {
+    display: none;
+}
+
+/* Body */
+#card-body {
+    width: 80%;
+    margin: auto;
+    padding: 10% 0;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    opacity: 0.7;
+}
+
+#main-paragraph {
+    margin: 8% 0 20% 0;
+    text-align: center;
+}
+
+#stats {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    row-gap: 20px;
+}
+
+.stat-heading {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.stat-paragraph {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1080px) {
+    
+    #card {
+        width: 75%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #card-img img#mobile-img {
+        display: none;
+    }
+
+    #card-img img#desktop-img {
+        display: block;
+        width: 100%;
+    }
+
+    #card-body {
+        width: 60%;
+        margin: auto;
+        padding: 3% 10%;
+    }
+
+    #main-heading, #main-paragraph {
+        text-align: left;
+    }
+
+    #main-paragraph {
+        margin: 5% 0;
+    }
+
+    #stats {
+        /* width: 80%; */
+        margin: auto;
+        flex-direction: row;
+        column-gap: 20px;
+        justify-content: space-between;
+        margin-top: 25%;
+    }
+
+    .stat-heading {
+        text-align: left;
+    }
+}
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
