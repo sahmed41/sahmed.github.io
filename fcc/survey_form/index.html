@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>One Store Survey Form</title>
+</head>
+
+<body>
+  <h1 id='title'>One Store Survey Form</h1>
+
+  <p id='description'>Thanks for taking the survey and helping us improve our customer experience</p>
+
+  <form id='survey-form'>
+      <fieldset>
+      <legend>Personal Information</legend>
+      <label for='name' id="name-label">
+          Name 
+          <input type='text' id='name' placeholder='Enter your name' required/>
+        </label>
+
+      <label for='email' id="email-label">
+          Email 
+          <input type='email' id='email' placeholder='Enter your email' required/>
+        </label>
+
+      <label for='name' id="number-label">
+          Age 
+          <input type='number' id='number' min='13' max='120' placeholder='Enter your age' required/>
+        </label>
+
+      <label id='dropdown-label' for='dropdown'>
+          Which branch you are purchase from?
+          <select id='dropdown'>
+            <option value=''>Select</option>
+            <option value='0'>Kandy Town</option>
+            <option value='1'>Peradeniya</option>
+            <option value='2'>Nowere Eliya</option>
+            <option value='3'>Matale</option>
+            <option value='4'>Colombo</option>
+          </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Which of the following is true about you as a customer?</legend>
+      <label for='cst-0' id='cst-0-label'class="option-label">
+          <input type='radio' name='customer-type' id='cst-0' value='0' /> This is the only place I purchase.
+        </label>
+      <label for='cst-1' id='cst-1-label'class="option-label">
+          <input type='radio' name='customer-type' id='cst-1' value='1' /> This is one of the places I purchase.
+        </label>
+      <label for='cst-2' id='cst-2-label'class="option-label">
+          <input type='radio' name='customer-type' id='cst-2' value='2' /> I purchase here once in a while but I am not a regular customer.
+        </label>
+      <label for='cst-3' id='cst-3-label'class="option-label">
+          <input type='radio' name='customer-type' id='cst-3' value='3' /> I rarely purchase here.
+        </label>
+      <label for='cst-4' id='cst-4-label'class="option-label">
+          <input type='radio' name='customer-type' id='cst-4' value='4' /> This is my first time coming here.
+        </label>
+    </fieldset>
+    <fieldset>
+      <legend>What type of goods you purchase at our stores?</legend>
+      <label for='pchpr-0' id='pchpr-0-label' class="option-label">
+          <input type='checkbox' name='purchase-preference' id='pchpr-0' value='pchpr-0'/> Groceries
+        </label>
+      <label for='pchpr-1' id='pchpr-1-label' class="option-label">
+          <input type='checkbox' name='purchase-preference' id='pchpr-1' value='pchpr-1'/> Sporting Goods
+        </label>
+      <label for='pchpr-2' id='pchpr-2-label' class="option-label">
+          <input type='checkbox' name='purchase-preference' id='pchpr-2' value='pchpr-2'/> Clothing Items
+        </label>
+      <label for='pchpr-3' id='pchpr-3-label' class="option-label">
+          <input type='checkbox' name='purchase-preference' id='pchpr-3' value='pchpr-3'/> Pharmaceutical Items
+        </label>
+      <label for='pchpr-4' id='pchpr-4-label' class="option-label">
+          <input type='checkbox' name='purchase-preference' id='pchpr-4' value='pchpr-4'/> Electronics
+        </label>
+    </fieldset>
+
+    <fieldset id="last-fieldset">
+      <label for='comments' id='comments-label'>
+          Do you have any opinions on how we can imporve your expereience at your stores?
+          <textarea id='comments' rows='4' cols='40'></textarea>
+      </label>
+    </fieldset>
+
+    <input type='submit' id='submit' value='Submit'/>
+  </form>
+</body>
+
+</html>
